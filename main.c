@@ -30,10 +30,12 @@ double Validare(const char *prompt)     // 8.1, 8.10
         if (sscanf(input, "%lf", &var) == 1)
         {
             esteValid = true;
+            break;
         }
         else
         {
             printf("Input invalid. Te rog sa introduci un numar.\n\n");
+            break;  // 14.6
         }
     } while (!esteValid);
     printf("\n");
@@ -82,7 +84,7 @@ int main()      // 16.5
 
     2.2 (r) - Comentarii doar cu / * ... * /
         Liniile 6, 9, 17, 46, 53, 56, 60, 74
-    6.3 (a) - Typedef predefinite in locul tipurilor numerice de baza (ex.: float64_t in loc de double)
+    6.3 (a) - "Typedef" predefinite in locul tipurilor numerice de baza (ex.: float64_t in loc de double)
         Toate variabilele
     8.1 (r) - Functiile trebuie sa aiba declaratii prototip inainte de definire
         Liniile 11 (f), 19(Validare)
@@ -92,10 +94,12 @@ int main()      // 16.5
         Liniile 58, 69, 71
     13.4 (r) - Variabilele float nu se folosesc in cicluri "for"
         Linia 67
+          14.6 (r) - Orice loop "for" poate avea maxim un break
+                Linia 38
     16.5 (r) - Functiile fara parametrii trebuie declarate si definite cu "void"
         Linia 44 (main)
     16.8 (r) - Toate functiile non-void trebuie sa aiba un "return" specificat
         Linia 76 (main)
-    20.9 (r) - Libraria <stdio.h> nu trebuie folosita
+    20.9 (r) - Libraria <stdio.h> nu trebuie folosita in cod productie
         Linia 1
 */
