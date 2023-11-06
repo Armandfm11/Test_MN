@@ -1,3 +1,5 @@
+ // 6.3 (a) - "Typedef" predefinite in locul tipurilor numerice de baza (ex.: float64_t in loc de double)
+
 #include <stdio.h>  // 20.9 (r) - Libraria <stdio.h> nu trebuie folosita in cod productie
 #include <stdlib.h>
 #include <math.h>
@@ -30,12 +32,12 @@ double Validare(const char *prompt)    //     8.10 (r) - Functiile apelate stric
         if (sscanf(input, "%lf", &var) == 1)
         {
             esteValid = true;
-            // break;
+            /* break; */    // 2.4 (a) - Codul nu ar trebui comentat
         }
         else
         {
             printf("Input invalid. Te rog sa introduci un numar.\n\n");
-            // break;  //         14.6 (r) - Orice loop "for" poate avea maxim un break
+            /* break; */    // 14.6 (r) - Orice loop "for" poate avea maxim un break
         }
     } while (!esteValid);
     printf("\n");
