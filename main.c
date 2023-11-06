@@ -37,7 +37,7 @@ double Validare(const char *prompt)    //     8.10 (r) - Functiile apelate stric
         else
         {
             printf("Input invalid. Te rog sa introduci un numar.\n\n");
-            /* break; */    // 14.6 (r) - Orice loop "for" poate avea maxim un break
+            /* break; */    // 14.6 (r) - Orice loop "if" poate avea maxim un break
         }
     } while (!esteValid);
     printf("\n");
