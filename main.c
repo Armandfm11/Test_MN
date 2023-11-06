@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>  // 20.9 (r) - Libraria <stdio.h> nu trebuie folosita in cod productie
 #include <stdlib.h>
 #include <math.h>
 #include <stdbool.h>
